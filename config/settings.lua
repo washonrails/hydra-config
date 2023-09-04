@@ -14,10 +14,24 @@ return {
     background = "dark"
   },
   g = {
-    hydravim_theme = "oxocarbon",
-    hydravim_branch = "main",
-    hydravim_remote = "HydraVim/HydraVim",
-    hydravim_branch_template = "1.1",
-    hydravim_dash = true,
+    hydravim = {
+      lazy = {
+        lockfile = vim.fn.stdpath "config" .. "/lua/user/data/lazy/lazy-lock.json",
+      },
+      dirs = {
+        data = vim.fn.stdpath "config" .. "/lua/user/data",
+      },
+      ui = {
+        theme = "oxocarbon",
+        dash = true,
+      },
+      repository = {
+        branch = "dev",
+        user_config = {
+          branch = "dev",
+          remote = "HydraVim/user-config",
+        },
+      },
+    },
   },
 }
