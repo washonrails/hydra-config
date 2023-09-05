@@ -4,7 +4,8 @@
 return {
   opt = {
     tabstop = 2,
-    guifont="Dank Mono Regular:h12"
+    guifont="Dank Mono Regular:h12",
+    clipboard = ""
   },
   wo = {
     wrap = false,
